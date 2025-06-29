@@ -2,9 +2,7 @@
 node_modules/
 
 # Compiled CSS from SCSS (if using a build process)
-assets/css/*.css.map
-assets/css/*.css
-!assets/css/main.css  # Keep main.css if it's tracked
+
 
 # SCSS cache
 .sass-cache/

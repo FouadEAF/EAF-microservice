@@ -1,0 +1,33 @@
+# Node modules (if ever used)
+node_modules/
+
+# Compiled CSS from SCSS (if using a build process)
+assets/css/*.css.map
+assets/css/*.css
+!assets/css/main.css  # Keep main.css if it's tracked
+
+# SCSS cache
+.sass-cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# PHP specific
+composer.lock
+
+# Misc
+*.bak
+*.tmp 

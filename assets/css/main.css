@@ -1238,6 +1238,61 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Values cards (card look consistent with service-item)
+--------------------------------------------------------------*/
+.values .value-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.04);
+  padding: 18px 14px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.values .value-item .icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: transparent;
+  border: 1.5px solid color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+.values .value-item .icon i {
+  color: var(--heading-color);
+  font-size: 18px;
+}
+.values .value-item h4 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--heading-color);
+  font-weight: 800;
+}
+.values .value-item p {
+  margin: 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+.values .value-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+  .values .value-item {
+    text-align: center;
+    align-items: center;
+  }
+  .values .value-item .icon {
+    margin-bottom: 6px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Work Process Section
 --------------------------------------------------------------*/
 .work-process .steps-item {

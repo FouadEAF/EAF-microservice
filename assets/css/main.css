@@ -1329,6 +1329,15 @@ section,
   padding: 40px 30px 30px;
 }
 
+@media (max-width: 991px) {
+  .work-process .steps-image {
+    height: auto;
+  }
+  .work-process .steps-image img {
+    height: auto;
+  }
+}
+
 .work-process .steps-content .steps-number {
   position: absolute;
   left: 30px;

@@ -1,6 +1,6 @@
 # Node modules (if ever used)
 node_modules/
-
+.qodo/
 # Compiled CSS from SCSS (if using a build process)
 
 

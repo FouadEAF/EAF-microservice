@@ -1,70 +1,97 @@
-# EAF Microservice Portfolio
+<div align="center">
+  <img src="assets/img/long_logo_dark.webp" alt="EAF Microservice Logo" width="300" />
+</div>
 
-A modern, multi-language portfolio and agency website built with HTML, CSS (SCSS), JavaScript, and popular frontend libraries. This project is ideal for freelancers, agencies, or small businesses seeking a visually appealing, responsive, and easily customizable web presence.
+# EAF Microservice – Services Numériques pour PME
 
-## Features
+**EAF Microservice** est une entreprise de services numériques dédiée à l'accompagnement des petites et moyennes entreprises (PME) dans leur transformation digitale. Situés à Rabat (Agdal), Maroc, nous offrons des solutions informatiques sur mesure, accessibles et fiables pour booster votre compétitivité.
 
-- **Multi-language support:** Arabic, English, and French (see `assets/lang/`)
-- **Responsive design:** Built with Bootstrap for mobile and desktop compatibility
-- **Modern UI/UX:** Uses AOS, Swiper, GLightbox, Isotope, and more
-- **Portfolio, Blog, and Service pages:** Modular structure for easy expansion
-- **Contact and Newsletter forms:** PHP backend scripts for form handling
-- **Well-organized assets:** Images, CSS, JS, and vendor libraries separated for clarity
-
-## Project Structure
-
-```
-assets/
-  css/         # Compiled CSS files
-  js/          # Main JavaScript files
-  scss/        # (If used) Source SCSS files
-  img/         # All images (backgrounds, portfolio, blog, etc.)
-  lang/        # Language JSON files (ar, en, fr)
-  vendor/      # Third-party libraries (Bootstrap, AOS, Swiper, etc.)
-forms/
-  contact.php  # Handles contact form submissions
-  newsletter.php # Handles newsletter form submissions
-index.html     # Main landing page
-pages/         # Additional HTML pages (blog, portfolio, 404, etc.)
-```
-
-## Getting Started
-
-1. **Clone or download the repository.**
-2. **Open `index.html` in your browser** to view the site locally.
-3. **To use contact/newsletter forms:**
-   - Ensure your server supports PHP.
-   - Configure `forms/contact.php` and `forms/newsletter.php` as needed for your email setup.
-
-## Customization
-
-- **Languages:** Edit or add JSON files in `assets/lang/`.
-- **Images:** Replace or add images in `assets/img/`.
-- **Styles:** Modify SCSS/CSS in `assets/scss/` or `assets/css/`.
-- **Content:** Edit HTML files in the root or `pages/` directory.
-
-## Dependencies
-
-- [Bootstrap](https://getbootstrap.com/)
-- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
-- [Swiper](https://swiperjs.com/)
-- [GLightbox](https://biati-digital.github.io/glightbox/)
-- [Isotope](https://isotope.metafizzy.co/)
-- [Waypoints](http://imakewebthings.com/waypoints/)
-- [ImagesLoaded](https://imagesloaded.desandro.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-
-All dependencies are included in `assets/vendor/` for offline use.
-
-## Deployment
-
-- Upload the project to any static web host (Netlify, Vercel, GitHub Pages, etc.).
-- For form functionality, deploy to a PHP-enabled server.
-
-## License
-
-Specify your license here (e.g., MIT, GPL, etc.).
+> _"Votre succès est notre technologie" 🚀_
 
 ---
 
-**Feel free to customize this README and the project to fit your needs!**
+## 🌟 À Propos
+
+Nous sommes une équipe passionnée combinant expertise technique et vision business. Notre mission est de simplifier l'accès aux technologies professionnelles pour les PME en proposant des services de haute qualité et un accompagnement personnalisé.
+
+## 💼 Nos Services
+
+Nous offrons une gamme complète de services pour répondre à vos besoins digitaux :
+
+### 🌐 Développement Digital
+
+- **Sites Web & E-commerce** : Création de vitrines modernes et boutiques en ligne performantes.
+- **Applications** : Développement d'applications mobiles (Android/iOS) et logiciels desktop.
+- **Automatisation** : Scripts personnalisés pour gagner du temps et améliorer vos processus.
+
+### 🔐 Maintenance & Sécurité
+
+- **Cyber Sécurité** : Protection antivirus, formation aux bonnes pratiques.
+- **Maintenance** : Gestion de parc informatique, mise à jour matériel et logiciel.
+- **Configuration** : Gestion de serveurs et stratégies de groupe (GPO).
+
+### 📊 Analyse de Données
+
+- **Traitement de Données** : Analyse statistique (SPSS, AMOS, Excel).
+- **Business Intelligence** : Tableaux de bord interactifs et rapports prédictifs.
+
+### 📈 Formation & Stages
+
+- Formations pratiques en développement, bureautique, algorithmique et gestion de projet.
+- Mise à niveau des compétences employés.
+
+### 🖥️ Saisie & Études
+
+- Digitalisation de documents et saisie rapide.
+- Études de marché et rapports personnalisés.
+
+---
+
+## 💎 Nos Valeurs
+
+- **Accessibilité** : Des tarifs transparents adaptés aux budgets des PME.
+- **Proximité** : Un interlocuteur dédié et un support réactif.
+- **Innovation** : Des solutions modernes et évolutives.
+- **Fiabilité** : Un service sécurisé et stable.
+
+---
+
+## 🛠️ Outils & Technologies
+
+Nous utilisons les meilleures technologies pour garantir performance et fiabilité :
+
+- **Développement** : Python (Django/Flask), Flutter (Dart), HTML/CSS/JS.
+- **Données & BDD** : SQL, Firebase, MongoDB, PostgreSQL.
+- **Outils** : Git, GitHub, Docker, VS Code, Android Studio.
+- **Bureautique** : Microsoft Office, Power BI.
+- **Systèmes** : Ubuntu, MacOS, Shell.
+
+---
+
+## 👥 L'Équipe
+
+Une équipe engagée à vos côtés :
+
+- **El Azbi Fouad** – Directeur Technique (Software Engineer & Concept)
+- **Chouklah Youssef** – Directeur Commercial (Responsable Économique & Marketing)
+
+---
+
+## 📞 Contact
+
+Vous avez un projet ? Discutons-en !
+
+- **📍 Adresse** : Rabat, Agdal, Maroc
+- **📱 Téléphone** : +212 645 994 904 / +212 727 593 647
+- **📧 Email** : EAF.microservice@gmail.com
+- **WhatsApp** : [Discuter sur WhatsApp](https://wa.me/212645994904)
+
+### Suivez-nous
+
+[Facebook](https://web.facebook.com/profile.php?id=61577782078660) | [LinkedIn](https://www.linkedin.com/in/eaf-microservice/) | [GitHub](https://github.com/eaf-microservice)
+
+---
+
+<p align="center">
+  © Copyright <strong>EAF Microservice</strong>. Tous droits réservés.
+</p>

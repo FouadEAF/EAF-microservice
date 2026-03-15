@@ -245,4 +245,70 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
+
+  /**
+   * Hide empty ad containers
+   * Checks if Google AdSense ads have loaded content, and hides containers if they're empty
+   */
+  function hideEmptyAdContainers() {
+    const adContainers = document.querySelectorAll(".ad-container");
+    
+    adContainers.forEach((container) => {
+      const adElement = container.querySelector("ins.adsbygoogle");
+      
+      if (!adElement) {
+        container.style.display = "none";
+        return;
+      }
+
+      // Check if ad has loaded content by checking for height or iframe
+      const hasHeight = adElement.offsetHeight > 0;
+      const hasIframe = adElement.querySelector("iframe");
+      const hasContent = hasHeight || hasIframe;
+
+      // If no content after a delay, hide the container
+      if (!hasContent) {
+        // Use MutationObserver to watch for ad loading
+        const observer = new MutationObserver((mutations) => {
+          const checkHeight = adElement.offsetHeight > 0;
+          const checkIframe = adElement.querySelector("iframe");
+          
+          if (checkHeight || checkIframe) {
+            // Ad has loaded, show container
+            container.style.display = "";
+            observer.disconnect();
+          } else {
+            // After 3 seconds, if still no content, hide container
+            setTimeout(() => {
+              if (adElement.offsetHeight === 0 && !adElement.querySelector("iframe")) {
+                container.style.display = "none";
+              }
+              observer.disconnect();
+            }, 3000);
+          }
+        });
+
+        observer.observe(adElement, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["style", "class"]
+        });
+
+        // Fallback: hide after 5 seconds if still empty
+        setTimeout(() => {
+          if (adElement.offsetHeight === 0 && !adElement.querySelector("iframe")) {
+            container.style.display = "none";
+            observer.disconnect();
+          }
+        }, 5000);
+      }
+    });
+  }
+
+  // Run after page load and after a short delay to allow ads to start loading
+  window.addEventListener("load", () => {
+    setTimeout(hideEmptyAdContainers, 1000);
+    setTimeout(hideEmptyAdContainers, 3000);
+  });
 })();

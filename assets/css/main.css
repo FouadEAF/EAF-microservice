@@ -2275,3 +2275,20 @@ section,
 p {
   text-align: justify;
 }
+
+/* Ad Container Styles */
+.ad-container {
+  margin: 20px 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Hide ad containers that are empty */
+.ad-container:empty {
+  display: none;
+}
+
+/* Hide ad containers that are marked as hidden */
+.ad-container.hidden {
+  display: none;
+}
